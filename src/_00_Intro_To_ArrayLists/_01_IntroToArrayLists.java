@@ -28,7 +28,10 @@ public class _01_IntroToArrayLists {
     		System.out.println(cha.get(hac));
     	}
         // 6. Print all the Strings in reverse order.
-
+    	
+    	 for(int hca = cha.size()-1; hca >= 0; hca--) {
+    		 System.out.println(cha.get(hca));
+    	 }
         // 7. Print only the Strings that have the letter 'e' in them.
         
     }
