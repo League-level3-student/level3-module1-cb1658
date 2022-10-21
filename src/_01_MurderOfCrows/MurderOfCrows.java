@@ -18,6 +18,13 @@ public class MurderOfCrows {
         //    through the stomach of each Crow, then print the name of the
         //    guilty Crow.
 
+    	int crowsKilled = 0;
+    	for(Crow a : theMurder) {
+    		if(theMurder.getStomachContents(a) != "diamond") {
+    			crowsKilled++;
+    		}
+    	}
+    	
         // 2. How many innocent crows had to die before the diamond was found?
 
     }

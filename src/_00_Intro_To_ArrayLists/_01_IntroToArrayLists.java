@@ -12,7 +12,7 @@ public class _01_IntroToArrayLists {
     	cha.add("cha");
     	cha.add("ahc");
     	cha.add("cha");
-    	cha.add("ahc");
+    	cha.add("ehc");
     	cha.add("cha");
         // 3. Print all the Strings using a standard for-loop
     	for(int i = 0; i< cha.size();i++) {
@@ -33,6 +33,12 @@ public class _01_IntroToArrayLists {
     		 System.out.println(cha.get(hca));
     	 }
         // 7. Print only the Strings that have the letter 'e' in them.
+    	 
+    	 for(String a : cha) {
+     			if(a.indexOf("e") != -1) {
+     				System.out.println(cha.indexOf(a));
+     		}
+    	 }
         
     }
 }
