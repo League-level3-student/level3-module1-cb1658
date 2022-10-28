@@ -60,10 +60,12 @@ public class _02_GuestBook implements ActionListener{
 		}
 		if(e.getSource() == button2) {
 			int index = 0;
+			String s = "";		
 			for(String a : names) {
 				index++;
-				JOptionPane.showMessageDialog(null, "Guest #"+index+": " + a);
+				s = s.concat("Guest #"+index+": " + a + "\n");
 			}
-		}
+				JOptionPane.showMessageDialog(null, s);
+	}
 	}
 }
