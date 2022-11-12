@@ -60,17 +60,26 @@ public class _02_LogSearch implements ActionListener {
 			}
 		}
 		
-		if(action.getSource() == button3) {
-			
+		if(action.getSource() == button3){
+			for(Integer s : hm.keySet()) {
+				System.out.println("ID: "+s+" Name: " + hm.get(s));
+			}
 		}
 		
 		if(action.getSource() == button4) {
-			
+			String input = JOptionPane.showInputDialog("Please enter in your ID number : ");
+			int input3Int = Integer.parseInt(input);
+			if(hm.get(input3Int) != null) {
+				hm.remove(input3Int);
+			}
+			else {
+				System.out.println("That ID does not exist.");
+			}
 		}
 		
 	}
-		
-	
+}		
+
 	
 	
 	
@@ -107,4 +116,4 @@ public class _02_LogSearch implements ActionListener {
      */
 	
 
-}
+
